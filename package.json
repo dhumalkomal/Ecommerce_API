@@ -4,7 +4,6 @@
   "description": "Ecommerce API using postman node.js and mongodb",
   "main": "index.js",
   "scripts": {
-   
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Komal Dhumal",
@@ -12,6 +11,7 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.18.2",
+    "mongodb": "^6.1.0",
     "mongoose": "^7.6.3",
     "node": "^21.0.0",
     "nodemon": "^3.0.1"
