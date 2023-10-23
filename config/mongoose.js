@@ -2,9 +2,9 @@
 const mongoose=require('mongoose');
 
 // Define the MongoDB connection URI
-// mongoose.connect('mongodb://127.0.0.1:27017/Ecommerce_API');  // Connection URL for the MongoDB database
+mongoose.connect('mongodb://127.0.0.1:27017/Ecommerce_API');  // Connection URL for the MongoDB database
 
-mongoose.connect('mongodb+srv://EcommerceAPI:Ecommerce1910@cluster0.mlnediy.mongodb.net/Ecommerce_API?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://EcommerceAPI:Ecommerce1910@cluster0.mlnediy.mongodb.net/?retryWrites=true&w=majority');
 
 // Get the default connection
 const db =  mongoose.connection;
