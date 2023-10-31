@@ -1,7 +1,7 @@
 // Import required modules
 const express = require('express'); // Import the Express framework
 const app = express(); // Create an instance of the Express application
-const port= 5000;// Port on which the server will run
+const port= 3000;// Port on which the server will run
 
 const bodyParser = require('body-parser');
 //Import database config using Mongoose

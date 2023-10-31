@@ -7,7 +7,6 @@ const mongoose=require('mongoose');
 
  const mongoURL= 'mongodb+srv://EcommerceAPI:Ecommerce1910@cluster0.mlnediy.mongodb.net/';
 
-
 // Get the default connection
 const db =  mongoose.connection;
 
