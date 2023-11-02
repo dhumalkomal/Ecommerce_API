@@ -9,7 +9,9 @@ const mongoose=require('mongoose');
 
 //  const mongoURL= 'mongodb+srv://EcommerceAPI:Ecommerce1910@cluster0.mlnediy.mongodb.net/';
 
- const mongoURL= 'mongodb+srv://admin:admin@shubhamcluster.ieolx9t.mongodb.net/Ecommerce-api?retryWrites=true&w=majority';
+const mongoURL = 'mongodb+srv://root:root@cluster0.hb4upn4.mongodb.net/'
+
+//  const mongoURL= 'mongodb+srv://admin:admin@shubhamcluster.ieolx9t.mongodb.net/Ecommerce-api?retryWrites=true&w=majority';
 
 // Get the default connection
 const db =  mongoose.connection;
