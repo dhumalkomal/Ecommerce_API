@@ -5,11 +5,11 @@ const mongoose=require('mongoose');
   // Connection URL for the MongoDB database
 // const mongoURL = 'mongodb://127.0.0.1:27017/Ecommerce_API';
 
-const mongoURL = 'mongodb+srv://komald:admin19@komalcluster.z9emgah.mongodb.net/Ecommerceapi?retryWrites=true&w=majority';
+// const mongoURL = 'mongodb+srv://komald:admin19@komalcluster.z9emgah.mongodb.net/Ecommerceapi?retryWrites=true&w=majority';
 
 //  const mongoURL= 'mongodb+srv://EcommerceAPI:Ecommerce1910@cluster0.mlnediy.mongodb.net/';
 
-//  const mongoURL= 'mongodb+srv://admin:admin@shubhamcluster.ieolx9t.mongodb.net/Ecommerce-api?retryWrites=true&w=majority';
+ const mongoURL= 'mongodb+srv://admin:admin@shubhamcluster.ieolx9t.mongodb.net/Ecommerce-api?retryWrites=true&w=majority';
 
 // Get the default connection
 const db =  mongoose.connection;
