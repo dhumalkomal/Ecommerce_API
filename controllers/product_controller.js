@@ -24,7 +24,7 @@ module.exports.create =async function(req, res) {
 
         await product.save();
         // res.json({ product });
-        res.json({message:'New product added successfully'})
+        res.json({ data , message:'New Product Created Successfully'})
     } 
     catch (err) {
         res.status(500).json({ error: err.message });
@@ -36,7 +36,7 @@ module.exports.delete =async function (req, res) {
     try {
 
         await Product.findByIdAndRemove(req.params.id);
-        res.json({ message: 'Product deleted' });
+        res.json({ message: 'Product Deleted' });
     } 
     catch (err) {
         res.status(500).json({ error: err.message });
@@ -53,7 +53,7 @@ module.exports.updateQunatity =async function(req, res){
         product.quantity += parseInt(number);
         await product.save();
         res.json({ product,
-                   message: 'Updated successfully'
+                   message: 'Product Updated Successfully'
                 });
     } 
     catch (err) {
@@ -62,3 +62,22 @@ module.exports.updateQunatity =async function(req, res){
         });
     }
 };
+
+
+
+// try{
+//     const update = await Product.findByIdAndUpdate(req.params.id , {
+//         quantity: req.params.update_quantity , 
+//       });
+   
+//       res.json({
+//             message: 'Product Updated Successfully'
+//       });
+// }
+// catch(err){
+//     res.status(500).json({ 
+//          error: err.message 
+//     });
+// }
+
+    
