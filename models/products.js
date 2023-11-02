@@ -9,8 +9,8 @@ const productSchema= new mongoose.Schema({
     versionKey: false
 });
 
+
 // Create the 'Product' model based on the schema
 const Product = mongoose.model('Product', productSchema);
-
 
 module.exports = Product;

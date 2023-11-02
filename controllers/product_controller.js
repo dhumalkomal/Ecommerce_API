@@ -24,7 +24,7 @@ module.exports.create =async function(req, res) {
 
         await product.save();
         // res.json({ product });
-        res.json({ data , message:'New Product Created Successfully'})
+        res.json({ message:'New Product Created Successfully'})
     } 
     catch (err) {
         res.status(500).json({ error: err.message });
@@ -63,21 +63,3 @@ module.exports.updateQunatity =async function(req, res){
     }
 };
 
-
-
-// try{
-//     const update = await Product.findByIdAndUpdate(req.params.id , {
-//         quantity: req.params.update_quantity , 
-//       });
-   
-//       res.json({
-//             message: 'Product Updated Successfully'
-//       });
-// }
-// catch(err){
-//     res.status(500).json({ 
-//          error: err.message 
-//     });
-// }
-
-    
